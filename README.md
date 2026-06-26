@@ -25,7 +25,7 @@ npm install
 npm run dev
 ```
 
-`http://localhost:3000` で起動します(`lap.sh:3000` などhostsで別名を割り当てている場合はそちらでもアクセス可能です)。
+`http://localhost:3000` で起動します。
 
 ### 環境変数
 
