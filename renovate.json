@@ -2,5 +2,21 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
+  ],
+  "packageRules": [
+    {
+      "description": "Next.js のビルドが TypeScript 7 に未対応のため 5 系に留める",
+      "matchPackageNames": [
+        "typescript"
+      ],
+      "allowedVersions": "<6"
+    },
+    {
+      "description": "eslint-config-next が ESLint 10 に未対応のため 9 系に留める",
+      "matchPackageNames": [
+        "eslint"
+      ],
+      "allowedVersions": "<10"
+    }
   ]
 }
